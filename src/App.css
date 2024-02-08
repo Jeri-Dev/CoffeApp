@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  background-image: url("./assets/bg-cafe.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-color: #111315;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  background-color: #1b1d1f;
+  color: white;
+  max-width: 90vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 160px 0 90px 0;
+  border-radius: 10px;
+  gap: 2rem;
+  padding: 20px 0 80px 0;
+}
+
+header {
+  background-image: url("./assets/vector.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+  gap: 1.3rem;
+
+  padding: 20px 40px 0px 40px;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #fef7ee;
+  font-family: "DM Sans", sans-serif;
+}
+
+header p {
+  font-size: 1rem;
+  font-family: "DM Sans", sans-serif;
+  color: #6f757c;
+  max-width: 90%;
+}
+
+.radio-buttons {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+
+  color: #fef7ee;
+  font-size: 1rem;
+  font-family: "DM Sans", sans-serif;
+}
+
+#all:checked ~ .all_lbl,
+#available:checked ~ .available_lbl {
+  background-color: #6f757c;
+}
+
+.radio-buttons input {
+  display: none;
+}
+
+.radio-buttons label {
+  width: 8rem;
+  height: 1.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: .3s;
+}
+
+.cards {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 260px));
+  gap: 3.7rem 2.2rem;
+  justify-content: center;
+  transition: .3s;
+}
+
+.card {
+  width: 260px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: .5em;
+}
+
+
+.card .title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.card .price {
+  color: #1b1d1f;
+  font-weight: 600;
+  background-color: #bee3cc;
+  border-radius: 3px;
+  height: 1.1rem;
+  width: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reputation span {
+  color: #6f757c;
+}
+
+.card_1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card_2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card_2 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card img {
+  border-radius: 15px;
+
+}
+
+.badge {
+  position: relative;
+  top: 13%;
+  left: 4%;
+  color: #1b1d1f;
+  font-weight: 800;
+  border-radius: 10px;
+  padding: 1px 5px;
+  background-color: #F6C768;
+  font-size: 0.625rem;
+}
+
+.p {
+  color: transparent;
+}
+
+.sold {
+  color: #ED735D;
+}
+
+
+@media screen and (max-width : 1280px){
+  header {
+    max-width: 60%;
+  }
+}
+@media screen and (max-width : 840px){
+  header {
+    max-width: 80%;
+  }
+}
+@media screen and (max-width : 540px){
+  header {
+    max-width: 100%;
+  }
+}
